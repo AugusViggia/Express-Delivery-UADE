@@ -1,0 +1,179 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-self: center;
+    height: 60px;
+}
+
+.nav_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+}
+
+.nav_list li {
+    margin-right: 0;
+}
+
+.nav_list li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav_list li a:hover {
+    color: rgb(133, 133, 207);
+}
+
+.mainContainer {
+    margin-top: 2rem;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+.contentContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imageDiv {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.imageLogo {
+    max-width: 100%;
+    height: auto;
+}
+
+.textDiv {
+    flex: 2;
+}
+
+.textDiv p {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.serviceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+    height: 90vh;
+}
+
+.option {
+    width: 60%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option h3 {
+    margin-top: 0;
+}
+
+.option p {
+    margin-bottom: 10px;
+}
+
+.option.active {
+    background-color: #ccc;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        font-size: 0.75rem;
+        background-color: #333;
+        color: #fff;
+    }
+
+    .contentContainer {
+        flex-direction: column;
+    }
+
+    .imageDiv {
+        margin-right: 0;
+    }
+
+    .textDiv {
+        margin-top: 20px;
+    }
+    
+}
