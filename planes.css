@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    min-height: 100vw;
+}
+
+.serviceContainer {
+    max-width: 100vw;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+#services {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: "Jersey 25", sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    color: #333;
+}
+
+
+#options{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.option {
+    flex-basis: calc(25% - 20px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+}
+
+.option {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgb(247, 238, 238);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    background-color: #0056b3;
+}
+
+.option p {
+    color: #666;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    color: #fff;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-nav li a {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+}
+
+footer {
+    font-family: "Ubuntu", sans-serif;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#ig:hover {
+    color: #f54390;
+}
+
+#facebook:hover {
+    color: rgb(62, 130, 178);
+}
+
+@media (max-width: 768px) {
+    .serviceContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #services{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #options {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .option {
+        display: flex;
+        flex-direction: column;
+        flex-basis: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+}
