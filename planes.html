@@ -40,37 +40,49 @@
             </div>
         </nav>
     </header>
+
     <div class="serviceContainer">
         <section id="services">
-            <h2 class="title">Nuestras opciones de envio</h2>
+            <h2 class="title">Nuestras opciones de envío</h2>
             <div id="options">
-                <div class="option">
+                <div class="option" onClick="openModal('Envío en el día')">
                     <h3>Envío en el día</h3>
-                    <p>Llega el mismo día de la compra. Disponible para todas las zonas de entrega dentro de nuestra área de servicio.
-                    </p>
+                    <p>Llega el mismo día de la compra. Disponible para todas las zonas de entrega dentro de nuestra área de
+                        servicio.</p>
                     <p>Precio: Variable. Los costos pueden variar según el tamaño y el peso del paquete.</p>
                 </div>
-                <div class="option">
+                <div class="option" onClick="openModal('Envío en 3 días')">
                     <h3>Envío en 3 días</h3>
-                    <p>Llega en un plazo de 3 días. Garantizamos la entrega dentro del plazo especificado, incluso en días festivos.</p>
+                    <p>Llega en un plazo de 3 días. Garantizamos la entrega dentro del plazo especificado, incluso en días
+                        festivos.</p>
                     <p>Precio: Variable. Los precios se basan en la distancia y el tipo de envío seleccionado.</p>
                 </div>
-                <div class="option">
+                <div class="option" onClick="openModal('Envío en 5 días hábiles')">
                     <h3>Envío en 5 días hábiles</h3>
-                    <p>Llega en un plazo de 5 días hábiles. Ofrecemos seguimiento en tiempo real para que puedas rastrear tu paquete en
-                        todo momento.</p>
+                    <p>Llega en un plazo de 5 días hábiles. Ofrecemos seguimiento en tiempo real para que puedas rastrear tu
+                        paquete en todo momento.</p>
                     <p>Precio: Variable. El precio se calcula en función del peso y las dimensiones del paquete, así como de la
                         distancia de envío.</p>
                 </div>
-                <div class="option">
+                <div class="option" onClick="openModal('Envío en 1 semana')">
                     <h3>Envío en 1 semana</h3>
                     <p>Llega en un plazo de 7 días. Servicio económico para envíos menos urgentes.</p>
-                    <p>Precio: Variable. Ofrecemos opciones de envío estándar y exprés para adaptarnos a tus necesidades y presupuesto.
-                    </p>
+                    <p>Precio: Variable. Ofrecemos opciones de envío estándar y exprés para adaptarnos a tus necesidades y
+                        presupuesto.</p>
                 </div>
-
             </div>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()"> X</span>
+                    <div id="modalContent">
+                    </div>
+                </div>
+            </div>
+
+            <script src="./modal.js"></script>
         </section>
+
     </div>
     <footer id="contact">
         <div class="contact-info">
