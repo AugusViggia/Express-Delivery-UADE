@@ -1,10 +1,7 @@
-// Función para abrir el modal y mostrar los detalles según la opción seleccionada
 function openModal(option) {
-  // Obtener el modal y el contenido del modal
   var modal = document.getElementById("myModal");
   var modalContent = document.getElementById("modalContent");
 
-  // Definir el contenido del modal según la opción seleccionada
   var modalHTML = "";
   switch (option) {
     case "Envío en el día":
@@ -39,20 +36,16 @@ function openModal(option) {
       modalHTML = `<h2>Detalles de Envío</h2><p>Información no disponible.</p>`;
   }
 
-  // Insertar el contenido generado en el modal
   modalContent.innerHTML = modalHTML;
 
-  // Mostrar el modal
   modal.style.display = "block";
 }
 
-// Función para cerrar el modal
 function closeModal() {
   var modal = document.getElementById("myModal");
   modal.style.display = "none";
 }
 
-// Cerrar el modal si se hace clic fuera del contenido del modal
 window.onclick = function (event) {
   var modal = document.getElementById("myModal");
   if (event.target == modal) {
