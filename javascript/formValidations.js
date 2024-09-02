@@ -28,5 +28,5 @@ function showModal() {
 }
 
 function redirectHome() {
-    window.location.href = "/";
-}
+    window.location.href = "https://augusviggia.github.io/Express-Delivery-UADE/";
+};
